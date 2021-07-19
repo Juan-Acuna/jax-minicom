@@ -1,0 +1,6 @@
+ALERTA = "!alerta"
+SEND_NOMBRE = "sendnombre"
+CHAT_ON = "chaton"
+CHAT_OFF = "chatof"
+CONFIG = "setip"
+SET_SERVER = "setserver"
