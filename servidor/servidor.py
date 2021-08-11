@@ -1,4 +1,3 @@
-from servidor.env import validar_puerto
 from model.agente import Agente
 from model.cargas import Carga, Instruccion, Mensaje, SerializadorCargas
 import socket as sk
