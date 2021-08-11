@@ -4,7 +4,7 @@
 # Archivo de configuracion de ejemplo para la conexion del cliente                          #
 #                                                                                           #
 # Todo texto despues del caracter '#' se considera comentario y no se considerará en la     #
-# configuración.                                                                            #        #
+# configuración.                                                                            #
 # Por cada atributo que no tenga un valor asignado ocacionará un error.                     #
 # Si no existe un archivo de configuración, se usarán valores por defecto.                  #
 #                                                                                           #

@@ -1,0 +1,1 @@
+web: python servidor/servidor.py -d %HOST% -p %PORT% -n JaxServer -c 2048 
