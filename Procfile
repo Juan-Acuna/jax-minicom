@@ -1,1 +1,1 @@
-worker: python servidor/servidor.py -d %HOST% -p %PORT% -n JaxServer -c 2048 
+worker: python servidor/servidor.py -h %HOST% -p %PORT% -n JaxServer -c 2048 
