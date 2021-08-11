@@ -59,7 +59,7 @@ def validar_nombre(nombre:str) -> str:
     elif nombre.strip().startswith('%') or nombre.strip().endswith('%'):
         raise Exception("Nombre de Servidor inválido: formato de entrada incorrecto. Esperado: %VALOR%, Encontrado: {}".format(nombre.strip()))
     else:
-        return nombre.split("=")[1]
+        return nombre
 
 if path.exists("config.txt"):
     l = open("config.txt","r").readlines()
