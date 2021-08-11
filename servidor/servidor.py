@@ -7,6 +7,9 @@ import model.comandos as Cmd
 import argparse
 
 if __name__=="__main__":
+    print("***********************************")
+    print(" INICIANDO PROGRAMA ")
+    print("***********************************")
     parser = argparse.ArgumentParser(description="Jax-minicom ligera aplicación de comunicación.",add_help=False)
     parser.add_argument("-?","--help","--ayuda",action="help",default=argparse.SUPPRESS,help="muestra las opciones disponibles de la aplicación")
     parser.add_argument("-n","--nombre",dest="nom",help="configura el nombre del servidor")
@@ -31,6 +34,11 @@ if __name__=="__main__":
         TAMANO_CARGA:int = env.validar_carga(args.peso)
     if args.nom:
         NOMBRE_SERVIDOR:str = env.validar_nombre(args.nom)
+
+    print(">  HOST_SERVIDOR :  "+HOST_SERVIDOR)
+    print(">  PUERTO_SERVIDOR :  "+PUERTO_SERVIDOR)
+    print(">  TAMANO_CARGA :  "+TAMANO_CARGA)
+    print(">  NOMBRE_SERVIDOR :  "+NOMBRE_SERVIDOR)
 
     servidor = sk.socket(sk.AF_INET, sk.SOCK_STREAM)
     servidor.bind((HOST_SERVIDOR, PUERTO_SERVIDOR))
